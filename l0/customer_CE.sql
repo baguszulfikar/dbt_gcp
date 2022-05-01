@@ -1,7 +1,7 @@
 {{ config(
-    alias = 'config_sales_email_ops_report_stock_vs_price',
+    alias = 'customer_CE',
     materialized = 'view',
 ) }}
 
-select * from ecommerce_test.customer
+select * from `dataengineering-348811.ecommerce_test.customer_CE`
 where customer_state = 'CE'
